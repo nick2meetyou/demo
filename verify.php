@@ -7,7 +7,7 @@
     ];
   $data = [
     'replyToken' => $access_token,
-    'messages' = > [$messages]
+    'messages' => [$messages]
     ];
   $post = json_encode($data);
   $headers = array('Content-Type': application/json','Authorization: Bearer ' . $access_token);
