@@ -5,10 +5,6 @@
     'type' => 'text',
     'text' => 'Hi We are Sabotenstore'
     ];
-  $data = [
-    'replyToken' => $access_token,
-    'messages' => [$messages]
-    ];
   $post = json_encode($data);
   $headers = array('Content-Type : application/json','Authorization: Bearer ' . $access_token);
   $ch = curl_init($url);
